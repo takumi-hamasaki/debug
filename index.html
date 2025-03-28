@@ -11,6 +11,7 @@
             //console.log(previousValue);
             //console.log(currentValue);
             return previousValue.concat( currentValue );
+            //concat() は 配列同士を結合するメソッド
         }
         
         var sampleArrayA = [ 
@@ -18,17 +19,20 @@
             [ 'B1', 'B2', 'B3' ],
             [ 'C1', 'C2', 'C3' ]
         ];
-        console.log(sampleArrayA);
+        //console.log(sampleArrayA);
 
-        document.write(sampleArrayA);
+        //document.write(sampleArrayA);
         
         
-        //var sampleArrayB = sampleArrayA.reduce( toOneDimension );
+        var sampleArrayB = sampleArrayA.reduce( toOneDimension );
+        //console.log(sampleArrayB);
         //for ( var counterVar = 0; counterVar < sampleArrayB.length; counterVar++ ) { 
             //document.write( 'sampleArrayB[' +counterVar +']: ' );
             //document.write( sampleArrayB[counterVar] );
             //document.write( '<br />' );
         //}
+
+        document.write(sampleArrayB);
 
 
         
