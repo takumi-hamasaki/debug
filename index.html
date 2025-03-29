@@ -10,7 +10,8 @@
         function toOneDimension( previousValue, currentValue ) {
             //console.log(previousValue);
             //console.log(currentValue);
-            return previousValue.concat( currentValue );
+            //return previousValue.concat( currentValue );
+            return currentValue.concat( previousValue );
             //concat() は 配列同士を結合するメソッド
         }
         
@@ -26,13 +27,13 @@
         
         var sampleArrayB = sampleArrayA.reduce( toOneDimension );
         //console.log(sampleArrayB);
-        //for ( var counterVar = 0; counterVar < sampleArrayB.length; counterVar++ ) { 
-            //document.write( 'sampleArrayB[' +counterVar +']: ' );
-            //document.write( sampleArrayB[counterVar] );
-            //document.write( '<br />' );
-        //}
+        for ( var counterVar = 0; counterVar < sampleArrayB.length; counterVar++ ) { 
+            document.write( 'sampleArrayB[' +counterVar +']: ' );
+            document.write( sampleArrayB[counterVar] );
+            document.write( '<br />' );
+        }
 
-        document.write(sampleArrayB);
+        //document.write(sampleArrayB);
 
 
         
