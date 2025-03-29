@@ -8,11 +8,12 @@
 
     <script>
         function toOneDimension( previousValue, currentValue ) {
-            //console.log(previousValue);
+            //console.log(previousValue); １回目：previous=A- , currentB- ２回目：previous=１回目の処理を引き継ぐからA-+B- , current=C-
             //console.log(currentValue);
             //return previousValue.concat( currentValue );
             return currentValue.concat( previousValue );
             //concat() は 配列同士を結合するメソッド
+            //concat()の部分でcurrentのCが最後の処理になってそこから表示されるから元のコードと逆の順番の表示ができる
         }
         
         var sampleArrayA = [ 
@@ -32,6 +33,8 @@
             document.write( sampleArrayB[counterVar] );
             document.write( '<br />' );
         }
+        //console.log(sampleArrayB.length);→lengthでsampleArrayBの要素数が9と出るのでfor文のループ回数は9-1で8回
+        //sampleArrayB[counterVar]→jsテキスト13_7P参考　counterVarにループの処理回数の数字が代入されるのでその数字番目の配列の要素を表示
 
         //document.write(sampleArrayB);
 
